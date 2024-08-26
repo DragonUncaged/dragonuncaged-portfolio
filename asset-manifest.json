@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/css/main.17715f2d.css",
+    "main.js": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/js/main.0049ca7e.js",
+    "static/media/SqlLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/SqlLogo.85fb38d6773862e917f4.png",
+    "static/media/MongoDBLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/MongoDBLogo.1df44ece8cf851cecf69.png",
+    "static/media/KaggleLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/KaggleLogo.421bd42df0fdc250cd4e.png",
+    "static/media/NodeJSLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/NodeJSLogo.aabc0115471d1e8b2d6e.png",
+    "static/media/ReactLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/ReactLogo.37940586dd863909ffca.png",
+    "static/media/TailwindLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/TailwindLogo.36b2728bf0d14b7b7576.png",
+    "static/media/PythonLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/PythonLogo.2e65c2b73eddaaf97e06.png",
+    "static/media/DockerLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/DockerLogo.6d1afdb456643d603142.png",
+    "static/media/TypescriptLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/TypescriptLogo.c4105801aadf2606ac30.png",
+    "static/media/ReduxLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/ReduxLogo.296b9306ae3e4de348c6.png",
+    "static/media/FirebaseLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/FirebaseLogo.a5f9f1fd96c36040dd43.png",
+    "static/media/JsLogo.png": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/media/JsLogo.db393457bf6303d846d6.png",
+    "index.html": "/DragonUncaged.github.io/dragonuncaged-portfolio/index.html",
+    "main.17715f2d.css.map": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/css/main.17715f2d.css.map",
+    "main.0049ca7e.js.map": "/DragonUncaged.github.io/dragonuncaged-portfolio/static/js/main.0049ca7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17715f2d.css",
+    "static/js/main.0049ca7e.js"
+  ]
+}

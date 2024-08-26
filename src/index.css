@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1e1e1e;
+}
+
+.default-padding {
+  padding-left: 270px;
+}
+
+@media (max-width: 1024px) {
+  .responsive-padding {
+    padding-left: 0 !important;
+  }
+}

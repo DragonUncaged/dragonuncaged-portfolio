@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
-import { BrowserRouter,Route, Routes } from 'react-router-dom';
+// import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import { HashRouter,Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 
 
@@ -15,12 +16,13 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home/>}>
         </Route>
       </Routes>  
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }

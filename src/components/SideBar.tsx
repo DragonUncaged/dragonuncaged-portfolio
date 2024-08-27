@@ -83,7 +83,7 @@ const SideBar = ({
                   className="h-10 w-10 text-yellow_vs hover:cursor-pointer duration-500 hover:scale-125"
                 />
               </a>
-              <a href="https://www.CodechefLogo.com/users/dragonuncaged">
+              <a href="https://www.Codechef.com/users/dragonuncaged">
                 <img
                   src={CodechefLogo}
                   alt="Codechef Logo"

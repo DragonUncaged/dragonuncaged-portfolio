@@ -60,8 +60,6 @@ const Resume = () => {
           <div className="w-3/4">
             <code className="text-sm">
               <br />• Good knowledge of React, Node.js, Express.js.
-              <br />• Good knowledge of React, Node.js, Express.js.
-              <br />• Experience in using Git and VSCode.
               <br />• Experience in using Git and VSCode.
               <br />• Solid understanding of software development lifecycles
             </code>

@@ -120,6 +120,16 @@ export default SideBar;
 
 const WebList = () => (
   <div className="flex flex-col">
+    <a href="https://chat-next-three-umber.vercel.app/" target="#">
+      <div className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12">
+        <img
+          src={TSIcon}
+          alt="TS Icon"
+          className="w-7 mr-1  ml-5 text-yellow_vs"
+        />
+        <p>Chat App</p>
+      </div>
+    </a>
     <a href="https://github.com/DragonUncaged/CodeSpace" target="#">
       <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]">
         <img
@@ -138,16 +148,6 @@ const WebList = () => (
           className="w-7 mr-1  ml-5 text-yellow_vs"
         />
         <p>BuyNow</p>
-      </div>
-    </a>
-    <a href="https://github.com/DragonUncaged/Chat_App">
-      <div className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12">
-        <img
-          src={JSIcon}
-          alt="JS Icon"
-          className="w-7 mr-1  ml-5 text-yellow_vs"
-        />
-        <p>Chatt App</p>
       </div>
     </a>
     <a href="https://github.com/DragonUncaged/Email_Newsletter">

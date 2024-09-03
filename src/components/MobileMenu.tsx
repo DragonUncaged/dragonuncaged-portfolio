@@ -13,6 +13,16 @@ const TSIcon = require("../assets/icons/TSIcon.png");
 const MobileMenu = () => {
   const projects = [
     {
+      name: "Chat App",
+      href: "https://chat-next-three-umber.vercel.app/",
+      icon: <img
+      src={TSIcon}
+      alt="JS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
+      current: false,
+    },
+    {
       name: "CodeSpace",
       href: "https://github.com/DragonUncaged/CodeSpace",
       icon: <img
@@ -26,18 +36,8 @@ const MobileMenu = () => {
       name: "BuyNow",
       href: "https://github.com/DragonUncaged/Buy_Now",
       icon:  <img
-      src={TSIcon}
-      alt="TS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: false,
-    },
-    {
-      name: "Chatt App",
-      href: "https://github.com/DragonUncaged/Chat_App",
-      icon: <img
       src={JSIcon}
-      alt="JS Icon"
+      alt="TS Icon"
       className="w-7 mr-1  ml-5 text-yellow_vs"
     />,
       current: false,

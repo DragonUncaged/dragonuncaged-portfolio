@@ -24,7 +24,7 @@ const MobileMenu = () => {
     },
     {
       name: "CodeSpace",
-      href: "https://github.com/DragonUncaged/CodeSpace",
+      href: "https://code-two-theta.vercel.app/",
       icon: <img
       src={JSIcon}
       alt="JS Icon"

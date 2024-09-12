@@ -130,7 +130,7 @@ const WebList = () => (
         <p>Chat App</p>
       </div>
     </a>
-    <a href="https://github.com/DragonUncaged/CodeSpace" target="#">
+    <a href="https://code-two-theta.vercel.app/" target="#">
       <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]">
         <img
           src={JSIcon}

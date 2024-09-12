@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dragonuncaged-portfolio/static/css/main.6b5cf994.css",
-    "main.js": "/dragonuncaged-portfolio/static/js/main.9aa375d5.js",
+    "main.js": "/dragonuncaged-portfolio/static/js/main.73fcdd89.js",
     "static/media/SqlLogo.png": "/dragonuncaged-portfolio/static/media/SqlLogo.85fb38d6773862e917f4.png",
     "static/media/MongoDBLogo.png": "/dragonuncaged-portfolio/static/media/MongoDBLogo.1df44ece8cf851cecf69.png",
     "static/media/CodechefLogo.png": "/dragonuncaged-portfolio/static/media/CodechefLogo.421bd42df0fdc250cd4e.png",
@@ -16,10 +16,10 @@
     "static/media/JsLogo.png": "/dragonuncaged-portfolio/static/media/JsLogo.db393457bf6303d846d6.png",
     "index.html": "/dragonuncaged-portfolio/index.html",
     "main.6b5cf994.css.map": "/dragonuncaged-portfolio/static/css/main.6b5cf994.css.map",
-    "main.9aa375d5.js.map": "/dragonuncaged-portfolio/static/js/main.9aa375d5.js.map"
+    "main.73fcdd89.js.map": "/dragonuncaged-portfolio/static/js/main.73fcdd89.js.map"
   },
   "entrypoints": [
     "static/css/main.6b5cf994.css",
-    "static/js/main.9aa375d5.js"
+    "static/js/main.73fcdd89.js"
   ]
 }

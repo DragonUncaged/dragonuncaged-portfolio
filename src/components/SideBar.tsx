@@ -5,6 +5,7 @@ const GitLogo = require("../assets/logos/GitLogo.png");
 const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
 const CodechefLogo = require("../assets/logos/CodechefLogo.png");
 const MailLogo = require("../assets/logos/MailLogo.png");
+const PythonLogo = require("../assets/logos/PythonLogo.png");
 
 const JSIcon = require("../assets/icons/JSIcon.png");
 const TSIcon = require("../assets/icons/TSIcon.png");
@@ -120,7 +121,28 @@ export default SideBar;
 
 const WebList = () => (
   <div className="flex flex-col">
-    <a href="https://chat-next-three-umber.vercel.app/" target="#">
+      
+      <a href="https://code-two-theta.vercel.app/" target="#">
+      <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]">
+        <img
+          src={JSIcon}
+          alt="JS Icon"
+          className="w-7 mr-1  ml-5 text-yellow_vs"
+        />
+        <p>CodeSpace</p>
+      </div>
+    </a>  
+      <a href="https://draw-zooi.onrender.com/" target="#">
+      <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]">
+        <img
+          src={JSIcon}
+          alt="JS Icon"
+          className="w-7 mr-1  ml-5 text-yellow_vs"
+        />
+        <p>Draw</p>
+      </div>
+    </a>  
+    <a href="https://chat-app-ca.netlify.app/" target="#">
       <div className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12">
         <img
           src={TSIcon}
@@ -130,17 +152,18 @@ const WebList = () => (
         <p>Chat App</p>
       </div>
     </a>
-    <a href="https://code-two-theta.vercel.app/" target="#">
-      <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]">
+    <a href="https://genai-chatbot-ctk7vcbjwwvekridgy6kgg.streamlit.app/" target="#">
+      <div className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12">
         <img
-          src={JSIcon}
-          alt="JS Icon"
-          className="w-7 mr-1  ml-5 text-yellow_vs"
+          src={PythonLogo}
+          alt="Python Icon"
+          className="w-5 mr-1  ml-5 text-yellow_vs"
         />
-        <p>CodeSpace</p>
+        <p>Document Chatbot</p>
       </div>
     </a>
-    <a href="https://github.com/DragonUncaged/Buy_Now">
+
+    {/* <a href="https://github.com/DragonUncaged/Buy_Now">
       <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]">
         <img
           src={JSIcon}
@@ -149,8 +172,8 @@ const WebList = () => (
         />
         <p>BuyNow</p>
       </div>
-    </a>
-    <a href="https://github.com/DragonUncaged/Email_Newsletter">
+    </a> */}
+    {/* <a href="https://github.com/DragonUncaged/Email_Newsletter">
       <div className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12">
         <img
           src={JSIcon}
@@ -159,6 +182,6 @@ const WebList = () => (
         />
         <p>Email Newsletter</p>
       </div>
-    </a>
+    </a> */}
   </div>
 );

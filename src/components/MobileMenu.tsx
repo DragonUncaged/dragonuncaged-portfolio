@@ -9,19 +9,10 @@ import { Disclosure, Transition } from "@headlessui/react";
 
 const JSIcon = require("../assets/icons/JSIcon.png");
 const TSIcon = require("../assets/icons/TSIcon.png");
+const PythonLogo = require("../assets/logos/PythonLogo.png");
 
 const MobileMenu = () => {
   const projects = [
-    {
-      name: "Chat App",
-      href: "https://chat-next-three-umber.vercel.app/",
-      icon: <img
-      src={TSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: false,
-    },
     {
       name: "CodeSpace",
       href: "https://code-two-theta.vercel.app/",
@@ -33,25 +24,57 @@ const MobileMenu = () => {
       current: true,
     },
     {
-      name: "BuyNow",
-      href: "https://github.com/DragonUncaged/Buy_Now",
-      icon:  <img
-      src={JSIcon}
-      alt="TS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
-      current: false,
-    },
-    {
-      name: "Email Newsletter",
-      href: "https://github.com/DragonUncaged/Email_Newsletter",
+      name: "Draw",
+      href: "https://draw-zooi.onrender.com/",
       icon: <img
       src={JSIcon}
       alt="JS Icon"
       className="w-7 mr-1  ml-5 text-yellow_vs"
     />,
+      current: true,
+    },
+    {
+      name: "Chat App",
+      href: "https://chat-app-ca.netlify.app/",
+      icon: <img
+      src={TSIcon}
+      alt="JS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
       current: false,
     },
+    {
+      name: "Document Chatbot",
+      href: "https://genai-chatbot-ctk7vcbjwwvekridgy6kgg.streamlit.app/",
+      icon: <img
+      src={PythonLogo}
+      alt="Python Icon"
+      className="w-5 mr-1  ml-5 text-yellow_vs"
+    />,
+      current: false,
+    },
+
+    // {
+    //   name: "BuyNow",
+    //   href: "https://github.com/DragonUncaged/Buy_Now",
+    //   icon:  <img
+    //   src={JSIcon}
+    //   alt="TS Icon"
+    //   className="w-7 mr-1  ml-5 text-yellow_vs"
+    // />,
+    //   current: false,
+    // },
+    // {
+    //   name: "Email Newsletter",
+    //   href: "https://github.com/DragonUncaged/Email_Newsletter",
+    //   icon: <img
+    //   src={JSIcon}
+    //   alt="JS Icon"
+    //   className="w-7 mr-1  ml-5 text-yellow_vs"
+    // />,
+    //   current: false,
+    // },
+ 
   ];
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");

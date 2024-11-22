@@ -16,7 +16,7 @@
 ## Getting Started
 ```bash
 npm i
-npm run dev
+npm run start
 ```
 
 # Deployment using Guthub Pages

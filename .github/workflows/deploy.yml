@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment on pushes to the main branch
+      - main  # Adjust if your default branch is different
 
 jobs:
   deploy:
@@ -18,11 +18,21 @@ jobs:
       with:
         node-version: '16'  # Adjust Node.js version to match your project
 
+    - name: Cache Node.js modules
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: Install dependencies
       run: npm install
 
     - name: Build project
-      run: react-scripts build
+      run: npm run build  # Adjust if your build command is different
 
     - name: Deploy to GitHub Pages
       run: npm run deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # This token is automatically provided by GitHub Actions

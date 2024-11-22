@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on pushes to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # Adjust Node.js version to match your project
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: react-scripts build
+
+    - name: Deploy to GitHub Pages
+      run: npm run deploy

@@ -14,6 +14,16 @@ const PythonLogo = require("../assets/logos/PythonLogo.png");
 const MobileMenu = () => {
   const projects = [
     {
+      name: "Portfolio",
+      href: "https://dragonuncaged.github.io/dragonuncaged-portfolio/",
+      icon: <img
+      src={TSIcon}
+      alt="JS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
+      current: true,
+    },
+    {
       name: "CodeSpace",
       href: "https://code-two-theta.vercel.app/",
       icon: <img
@@ -21,7 +31,7 @@ const MobileMenu = () => {
       alt="JS Icon"
       className="w-7 mr-1  ml-5 text-yellow_vs"
     />,
-      current: true,
+      current: false,
     },
     {
       name: "Draw",
@@ -31,7 +41,7 @@ const MobileMenu = () => {
       alt="JS Icon"
       className="w-7 mr-1  ml-5 text-yellow_vs"
     />,
-      current: true,
+      current: false,
     },
     {
       name: "Chat App",
@@ -122,7 +132,7 @@ const MobileMenu = () => {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            : "text-gray-300 hover:bg-gray-800 hover:text-white",
                           "block px-3 py-2 rounded-md text-base font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}

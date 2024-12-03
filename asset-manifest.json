@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dragonuncaged-portfolio/static/css/main.6b5cf994.css",
-    "main.js": "/dragonuncaged-portfolio/static/js/main.005ce013.js",
+    "main.css": "/dragonuncaged-portfolio/static/css/main.9f4aafb6.css",
+    "main.js": "/dragonuncaged-portfolio/static/js/main.b4dce977.js",
     "static/media/SqlLogo.png": "/dragonuncaged-portfolio/static/media/SqlLogo.85fb38d6773862e917f4.png",
     "static/media/MongoDBLogo.png": "/dragonuncaged-portfolio/static/media/MongoDBLogo.1df44ece8cf851cecf69.png",
     "static/media/CodechefLogo.png": "/dragonuncaged-portfolio/static/media/CodechefLogo.421bd42df0fdc250cd4e.png",
@@ -15,11 +15,11 @@
     "static/media/FirebaseLogo.png": "/dragonuncaged-portfolio/static/media/FirebaseLogo.a5f9f1fd96c36040dd43.png",
     "static/media/JsLogo.png": "/dragonuncaged-portfolio/static/media/JsLogo.db393457bf6303d846d6.png",
     "index.html": "/dragonuncaged-portfolio/index.html",
-    "main.6b5cf994.css.map": "/dragonuncaged-portfolio/static/css/main.6b5cf994.css.map",
-    "main.005ce013.js.map": "/dragonuncaged-portfolio/static/js/main.005ce013.js.map"
+    "main.9f4aafb6.css.map": "/dragonuncaged-portfolio/static/css/main.9f4aafb6.css.map",
+    "main.b4dce977.js.map": "/dragonuncaged-portfolio/static/js/main.b4dce977.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b5cf994.css",
-    "static/js/main.005ce013.js"
+    "static/css/main.9f4aafb6.css",
+    "static/js/main.b4dce977.js"
   ]
 }

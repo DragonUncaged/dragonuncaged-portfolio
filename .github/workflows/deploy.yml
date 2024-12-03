@@ -1,38 +1,61 @@
-name: Deploy to GitHub Pages
+name: deploy
 
 on:
   push:
-    branches:
-      - main  # Adjust if your default branch is different
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CI: false
 
 jobs:
-  deploy:
+  build:
+
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      pages: 'write'
+      actions: 'write'
+      checks: 'write'
+      deployments: 'write'
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Adjust Node.js version to match your project
-
-    - name: Cache Node.js modules
-      uses: actions/cache@v3
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - name: Install dependencies
-      run: npm install
-
-    - name: Build project
-      run: npm run build  # Adjust if your build command is different
-
+      # Using npm ci is generally faster than running npm i because it caches dependencies
+      run: |
+        npm ci
+    - name: Build the app
+      run: |
+        npm run build
+    - name: Run component tests
+      run: |
+        npm run test
+        
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        # Upload build directory content
+        path: 'build/'
     - name: Deploy to GitHub Pages
-      run: npm run deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # This token is automatically provided by GitHub Actions
+      id: deployment
+      uses: actions/deploy-pages@v1
+      env:  
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
